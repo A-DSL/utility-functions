@@ -15,7 +15,7 @@ const dateConstructor2 = (day, month, year) => {
         while (String(string).length < length){
             string = "0" + string;
         }
-        return string;
+        return String(string);
     }
     //construct number
     var yearNumber = lengthCheck(year, 4);
@@ -30,3 +30,4 @@ console.log(dateConstructor("2002-05-11"));
 console.log(dateConstructor2("11", "5", "2002"));
 console.log(dateConstructor2("1", "5", "2002"));
 console.log(dateConstructor2(1, 5, 2002));
+console.log(dateConstructor2(11, 12, 2002));
